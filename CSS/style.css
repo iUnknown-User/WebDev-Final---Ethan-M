@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body  */
+body {
+  background: #242227;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+nav {
+  position: fixed; /* Ensure the nav stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2a282f;
+  padding: 30px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+nav img {
+  height: 80px; /* Adjust logo height for better alignment */
+  width: auto; /* Maintain aspect ratio */
+}
+nav a {
+  font-size: 40px;
+  color: silver;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Content section */
+.content {
+  margin-top: 120px;
+  padding: 50px 25%;
+  color: silver;
+  font-size: 40px;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #2a282f;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: silver;
+  margin-top: 50px;
+}
+
+footer p {
+  position: absolute; /* Position the copyright text over other content */
+  top: 10px; /* Adjust the distance from the top */
+  left: 50%; /* Centers the copyright text horizontally */
+  transform: translateX(-50%); /* Adjusts for perfect centering */
+  color: silver;
+  margin: 0; /* Optional: Remove default margin */
+}
+
+footer a {
+  color: silver;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2a282f;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  min-width: 200px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: silver;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #444;
+  color: white;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* Content section */
+.job-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Styling for Job Boxes */
+.job-box {
+  background-color: #444;
+  width: 80%;
+  max-width: 600px;
+  padding: 30px;
+  color: silver;
+  font-size: 18px;
+  text-align: left;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 0; /* Ensuring no rounded corners */
+}
+
+.job-box h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.job-box p {
+  margin-bottom: 10px;
+}
