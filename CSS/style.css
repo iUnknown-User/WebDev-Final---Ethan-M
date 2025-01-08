@@ -15,7 +15,7 @@ body {
 
 /* Navbar */
 nav {
-  position: fixed; /* Ensure the nav stays at the top */
+  position: fixed; /* makes the nav stays at the top */
   top: 0;
   left: 0;
   width: 100%;
@@ -29,8 +29,8 @@ nav {
 }
 
 nav img {
-  height: 80px; /* Adjust logo height for better alignment */
-  width: auto; /* Maintain aspect ratio */
+  height: 80px;
+  width: auto;
 }
 nav a {
   font-size: 40px;
@@ -44,12 +44,11 @@ nav a:hover {
   color: white;
 }
 
-/* Content section */
 .content {
   margin-top: 120px;
   padding: 50px 25%;
   color: silver;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -67,12 +66,12 @@ footer {
 }
 
 footer p {
-  position: absolute; /* Position the copyright text over other content */
-  top: 10px; /* Adjust the distance from the top */
-  left: 50%; /* Centers the copyright text horizontally */
-  transform: translateX(-50%); /* Adjusts for perfect centering */
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   color: silver;
-  margin: 0; /* Optional: Remove default margin */
+  margin: 0;
 }
 
 footer a {
@@ -118,15 +117,7 @@ footer a:hover {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-/* Content section */
-.job-boxes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
 
-/* Styling for Job Boxes */
 .job-box {
   background-color: #444;
   width: 80%;
@@ -137,7 +128,7 @@ footer a:hover {
   text-align: left;
   margin: 20px auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 0; /* Ensuring no rounded corners */
+  border-radius: 0; /* making no rounded corners */
 }
 
 .job-box h4 {
@@ -147,4 +138,54 @@ footer a:hover {
 
 .job-box p {
   margin-bottom: 10px;
+}
+
+.text {
+  margin-top: 20px;
+  margin-left: 5px;
+  padding: 50px 6%;
+  color: silver;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.text p {
+  margin-bottom: 20px;
+}
+
+strong {
+  color: white;
+}
+
+.box {
+  background-color: #444;
+  padding: 30px;
+  color: silver;
+  font-size: 18px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 0; /* making no rounded corners */
+  margin-top: 120px;
+  padding: 50px 6%;
+  color: silver;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.job-box2 {
+  background-color: #444;
+  max-width: 2000px;
+  padding: 30px;
+  color: silver;
+  font-size: 18px;
+  text-align: left;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 0; /* making no rounded corners */
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
