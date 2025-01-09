@@ -4,49 +4,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Home - Job Board</title>
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
+  <style>
+    .jobtext {
+      color: silver;
+      text-align: center;
+    }
+  </style>
   <body>
-    <!--nav bar-->
+    <!-- Navbar -->
     <nav>
-      <img src="img/logo.png" />
+      <img src="img/logo.png" alt="Company Logo" />
       <a href="index.html">Home</a>
       <div class="dropdown">
-        <a href="careers.html">Careers</a>
+        <a href="#">Careers</a>
         <div class="dropdown-menu">
           <a href="contract-jobs.html">Contract Jobs</a>
           <a href="permanent-jobs.html">Permanent Jobs</a>
         </div>
       </div>
-      <a href="about.html">Contact us</a>
+      <a href="about.html">Contact Us</a>
     </nav>
-    <!--main code-->
-    <main>
-      <div class="content">
-        <h3>Text</h3>
-        <p>Text</p>
+
+    <!-- Section -->
+    <header class="job-section">
+      <div class="job-content">
+        <h1>Welcome to <span>Katalyst</span></h1>
+        <p>Find a job here.</p>
+        <a href="contract-jobs.html" class="buttoncolour">Explore Jobs</a>
       </div>
-      <div style="text-align: center">
+    </header>
+
+    <!-- Job Categories -->
+    <section class="jobtext">
+      <h2>Job Categories</h2>
+      <div class="centering">
+        <div class="centering2">
+          <h3>Contract Jobs</h3>
+          <a href="contract-jobs.html" class="buttoncolour2">View Listings</a>
+        </div>
+        <div class="centering2">
+          <h3>Permanent Jobs</h3>
+          <p>Long-term positions to achieve stability and growth.</p>
+          <a href="permanent-jobs.html" class="buttoncolour2">View Listings</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <h2>Our Location</h2>
+      <div class="map-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6062.654591973135!2d-74.414592!3d40.556449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b8185896ac5d%3A0x65b7da2173ffc55d!2sKatalyst%20HealthCares%20%26%20Life%20Sciences!5e0!3m2!1sen!2sus!4v1736357331264!5m2!1sen!2sus"
-          width="1400"
+          width="100%"
           height="400"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
-    </main>
-    <!--footer-->
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <p style="text-align: center">
-        &#169; 2025 Katalyst HealthCares & Life Sciences. All Rights Reserved.
-        Muffin Group
-      </p>
-      <a href="#">Privacy Policy</a>
-      <a href="tos.html">Terms of Service</a>
-      <a href="#">Contact</a>
+      <p>&#169; 2025 Job Board. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="#">Contact</a>
+      </div>
     </footer>
   </body>
 </html>

@@ -3,115 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Listings</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <!--nav bar-->
+    <!-- Navbar -->
     <nav>
       <img src="img/logo.png" alt="Logo" />
       <a href="index.html">Home</a>
       <div class="dropdown">
-        <a href="careers.html">Careers</a>
+        <a href="#">Careers</a>
         <div class="dropdown-menu">
           <a href="contract-jobs.html">Contract Jobs</a>
           <a href="permanent-jobs.html">Permanent Jobs</a>
         </div>
       </div>
-      <a href="about.html">Contact us</a>
+      <a href="about.html">Contact Us</a>
     </nav>
-
-    <!--main code-->
-    <main>
-      <div class="box">
-        <strong>Contact Us</strong>
-      </div>
-      <div class="text">
-        <!--information-->
-        <p>
-          <strong>Office Location: </strong>Katalyst HealthCares & Life Sciences
-          Inc., 285 Durham Ave, Suite 12, South Plainfield, NJ 07080.
-        </p>
-        <p><strong>Email: </strong>info@katalysthls.com</p>
-        <p><strong>Phone: </strong>+1 (908) 967-5588</p>
-        <p>+1 (908) 967-5588</p>
-        <!--query-->
-        <h1><strong>Send Your Query</strong></h1>
-        <!--fourm-->
-        <form>
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required /><br /><br />
-
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required /><br /><br />
-
-          <label for="phone">Phone:</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="Enter your phone number"
-            required /><br /><br />
-
-          <label for="message">Message:</label><br />
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            placeholder="Enter your message"
-            required></textarea
-          ><br /><br />
-
-          <input type="submit" value="Submit" />
-        </form>
-
-        <style>
-          form {
-            padding: 20px;
-          }
-          input,
-          textarea {
-            font-size: 18px;
-            padding: 10px;
-            margin-bottom: 15px;
-          }
-          textarea {
-            height: 120px; /* Makes the message box 20px taller */
-          }
-        </style>
-
-        <h1><strong>What You Get When Asking Your Question</strong></h1>
-        <ul style="color: white; font-size: 30px; margin-left: 50px">
-          <li>
-            <p>Less Then a 12 Hour Responce</p>
-          </li>
-          <li>
-            <p>Experienced Responce Specialists</p>
-          </li>
-          <li>
-            <p>No one listens to your phone calls</p>
-          </li>
-        </ul>
-      </div>
-      <div style="text-align: center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6062.654591973135!2d-74.414592!3d40.556449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b8185896ac5d%3A0x65b7da2173ffc55d!2sKatalyst%20HealthCares%20%26%20Life%20Sciences!5e0!3m2!1sen!2sus!4v1736357331264!5m2!1sen!2sus"
-          width="1400"
-          height="400"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Main content -->
+    <main class="contact-page">
+      <div class="contact-container">
+        <div class="form-section">
+          <h1>Contact Us</h1>
+          <form>
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="info-section">
+          <h2>For questions, technical assistance, or collaboration:</h2>
+          <p><strong>Phone:</strong> +1 (908) 967-5588</p>
+          <p><strong>Email:</strong> info@katalysthls.com</p>
+          <p>
+            <strong>Address:</strong> 285 Durham Ave, Suite 12, South
+            Plainfield, NJ 07080
+          </p>
+        </div>
       </div>
     </main>
 

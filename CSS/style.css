@@ -1,13 +1,15 @@
+/* everything */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-/* Body  */
+/* Body */
 body {
   background: #242227;
-  font-family: Arial, sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,7 +17,7 @@ body {
 
 /* Navbar */
 nav {
-  position: fixed; /* makes the nav stays at the top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -32,6 +34,7 @@ nav img {
   height: 80px;
   width: auto;
 }
+
 nav a {
   font-size: 40px;
   color: silver;
@@ -44,47 +47,7 @@ nav a:hover {
   color: white;
 }
 
-.content {
-  margin-top: 120px;
-  padding: 50px 25%;
-  color: silver;
-  font-size: 30px;
-  text-align: center;
-}
-
-footer {
-  position: relative;
-  width: 100%;
-  background-color: #2a282f;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  color: silver;
-  margin-top: 50px;
-}
-
-footer p {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: silver;
-  margin: 0;
-}
-
-footer a {
-  color: silver;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: white;
-}
-
+/* Dropdown */
 .dropdown {
   position: relative;
 }
@@ -113,22 +76,78 @@ footer a:hover {
   color: white;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-.job-box {
+/* Content */
+.content {
+  margin-top: 120px;
+  padding: 50px 25%;
+  color: silver;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #2a282f;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: silver;
+  margin-top: 50px;
+}
+
+footer p {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+footer a {
+  color: silver;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.box,
+.job-box,
+.job-box2 {
   background-color: #444;
-  width: 80%;
-  max-width: 600px;
   padding: 30px;
   color: silver;
   font-size: 18px;
   text-align: left;
   margin: 20px auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 0; /* making no rounded corners */
+  border-radius: 0;
+}
+
+.box {
+  margin-top: 120px;
+  padding: 50px 6%;
+  font-size: 30px;
+}
+
+.job-box {
+  width: 80%;
+  max-width: 600px;
+}
+
+.job-box2 {
+  max-width: 2000px;
 }
 
 .job-box h4 {
@@ -141,13 +160,11 @@ footer a:hover {
 }
 
 .text {
-  margin-top: 20px;
-  margin-left: 5px;
+  margin: 20px 0;
   padding: 50px 6%;
   color: silver;
   font-size: 20px;
   text-align: left;
-  margin-bottom: 20px;
 }
 
 .text p {
@@ -158,34 +175,170 @@ strong {
   color: white;
 }
 
-.box {
-  background-color: #444;
-  padding: 30px;
-  color: silver;
-  font-size: 18px;
-  text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 0; /* making no rounded corners */
-  margin-top: 120px;
-  padding: 50px 6%;
-  color: silver;
-  font-size: 30px;
-  margin-bottom: 20px;
+.contact-page {
+  background: linear-gradient(135deg, #242227, #1b1a1f);
+  color: white;
+  padding: 100px 10%;
+  min-height: 100vh;
 }
 
-.job-box2 {
-  background-color: #444;
-  max-width: 2000px;
-  padding: 30px;
-  color: silver;
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.form-section {
+  background: #2a282f;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 50%;
+}
+
+.form-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #8dd9e4;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form {
+  padding: 20px;
+}
+
+form input,
+form textarea {
+  background: #444;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 120px;
+}
+
+form button {
+  background: #8dd9e4;
+  border: none;
+  padding: 15px;
+  color: black;
   font-size: 18px;
-  text-align: left;
-  margin: 20px auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 0; /* making no rounded corners */
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #5bbec4;
+}
+
+.info-section {
+  margin-top: 40px;
+  padding: 40px;
+  width: 40%;
+}
+
+.info-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #8dd9e4;
+}
+
+.info-section p {
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 
 h1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
+}
+
+.job-section {
+  background: linear-gradient(135deg, #2a282f, #444);
+  color: white;
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.job-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.job-content span {
+  color: #8dd9e4;
+}
+
+.job-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.buttoncolour {
+  background: #8dd9e4;
+  color: black;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.centering {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.centering2 {
+  background: #444;
+  padding: 20px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 30%;
+}
+
+.centering2 h3 {
+  color: #8dd9e4;
+  margin-bottom: 10px;
+}
+
+.buttoncolour2 {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #8dd9e4;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #2a282f;
+  color: silver;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-links a {
+  color: silver;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: white;
 }
