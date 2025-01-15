@@ -3,13 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Listings</title>
+    <title>Katalyst</title>
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
+  <style>
+    .job-box h4 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .job-box p {
+      margin-bottom: 10px;
+    }
+    .job-box {
+      width: 80%;
+      max-width: 600px;
+    }
+    #content {
+      margin-top: 120px;
+      padding: 50px 25%;
+      color: silver;
+      font-size: 30px;
+      text-align: center;
+    }
+  </style>
   <body>
     <!--nav bar-->
     <nav>
-      <img src="img/logo.png" />
+      <img src="img/logo.png" alt="Logo" />
       <a href="index.html">Home</a>
       <div class="dropdown">
         <a href="#">Careers</a>
@@ -23,7 +44,7 @@
 
     <!--main code-->
     <main>
-      <div class="content">
+      <div id="content">
         <h3>Job Listings</h3>
 
         <!-- Job Boxes -->
@@ -39,7 +60,7 @@
           <p><strong>Date:</strong> 01/07/2025</p>
           <p><strong>Location:</strong> San Diego, CA</p>
           <p><strong>Job Code:</strong> 25-02143</p>
-          <button style="height: 40px; width: 70px">Details</button>
+          <button>Details</button>
         </div>
 
         <div class="job-box">
@@ -53,7 +74,7 @@
           <p><strong>Date:</strong> 01/07/2025</p>
           <p><strong>Location:</strong> Bothell, WA</p>
           <p><strong>Job Code:</strong> 25-02142</p>
-          <button style="height: 40px; width: 70px">Details</button>
+          <button>Details</button>
         </div>
 
         <div class="job-box">
@@ -67,7 +88,7 @@
           <p><strong>Date:</strong> 01/07/2025</p>
           <p><strong>Location:</strong> Columbia, MD</p>
           <p><strong>Job Code:</strong> 25-02141</p>
-          <button style="height: 40px; width: 70px">Details</button>
+          <button>Details</button>
         </div>
 
         <div class="job-box">
@@ -81,7 +102,7 @@
           <p><strong>Date:</strong> 01/07/2025</p>
           <p><strong>Location:</strong> Warren, NJ</p>
           <p><strong>Job Code:</strong> 25-02140</p>
-          <button style="height: 40px; width: 70px">Details</button>
+          <button>Details</button>
         </div>
 
         <div class="job-box">
@@ -95,14 +116,14 @@
           <p><strong>Date:</strong> 01/06/2025</p>
           <p><strong>Location:</strong> San Diego, CA</p>
           <p><strong>Job Code:</strong> 25-02139</p>
-          <button style="height: 40px; width: 70px">Details</button>
+          <button>Details</button>
         </div>
       </div>
     </main>
 
     <!--footer-->
     <footer>
-      <p style="text-align: center">
+      <p>
         &#169; 2025 Katalyst HealthCares & Life Sciences. All Rights Reserved.
         Muffin Group
       </p>

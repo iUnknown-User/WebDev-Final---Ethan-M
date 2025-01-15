@@ -1,13 +1,16 @@
-/* everything */
+/* This Part of the CSS controls everything on the website,
+  what I'm doing here is resetting all values and setting the
+  default line height and font */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  line-height: 25px;
 }
 
-/* Body */
+/* This is the body section for the body semantic tag */
 body {
   background: #242227;
   min-height: 100vh;
@@ -15,6 +18,13 @@ body {
   flex-direction: column;
 }
 
+/* Navbar:
+    This is my navigation bar for the website, this allows users to navigate throughout
+    my website and visit other pages.
+    With this background color and the silver color under nav a, it has a contrast ratio
+    of 7.99 (needs to be double of this) */
+
+/* Navbar Animation */
 /* Navbar */
 nav {
   position: fixed;
@@ -43,6 +53,7 @@ nav a {
   transition: color 0.3s ease;
 }
 
+/* Creats the Hover effect for navbar links */
 nav a:hover {
   color: white;
 }
@@ -52,15 +63,34 @@ nav a:hover {
   position: relative;
 }
 
+/* This is the dropdown menu that appears when you hover over the Careers text on the website */
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 100%; /* Keeps the dropdown under the Careers link */
   left: 0;
   background-color: #2a282f;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   padding: 10px 0;
   min-width: 200px;
+}
+
+/* This creates an animation for the dropdown menu */
+@keyframes dropdownAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: dropdownAnimation 0.3s ease-out forwards; /* Start animation */
 }
 
 .dropdown-menu a {
@@ -71,25 +101,17 @@ nav a:hover {
   text-decoration: none;
 }
 
+/* Hover effect for dropdown menu links */
 .dropdown-menu a:hover {
   background-color: #444;
   color: white;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
+  display: block; /* Show dropdown menu on hover */
 }
 
-/* Content */
-.content {
-  margin-top: 120px;
-  padding: 50px 25%;
-  color: silver;
-  font-size: 30px;
-  text-align: center;
-}
-
-/* Footer */
+/* This is the CSS code for the footer of my website */
 footer {
   position: relative;
   width: 100%;
@@ -122,7 +144,8 @@ footer a:hover {
   color: white;
 }
 
-.box,
+/* Box styles for job listings */
+#box,
 .job-box,
 .job-box2 {
   background-color: #444;
@@ -135,79 +158,11 @@ footer a:hover {
   border-radius: 0;
 }
 
-.box {
-  margin-top: 120px;
-  padding: 50px 6%;
-  font-size: 30px;
-}
-
-.job-box {
-  width: 80%;
-  max-width: 600px;
-}
-
-.job-box2 {
-  max-width: 2000px;
-}
-
-.job-box h4 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.job-box p {
-  margin-bottom: 10px;
-}
-
-.text {
-  margin: 20px 0;
-  padding: 50px 6%;
-  color: silver;
-  font-size: 20px;
-  text-align: left;
-}
-
-.text p {
-  margin-bottom: 20px;
-}
-
 strong {
   color: white;
 }
 
-.contact-page {
-  background: linear-gradient(135deg, #242227, #1b1a1f);
-  color: white;
-  padding: 100px 10%;
-  min-height: 100vh;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.form-section {
-  background: #2a282f;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 50%;
-}
-
-.form-section h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #8dd9e4;
-}
-
-.form-section form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
+/* Form styling */
 form {
   padding: 20px;
 }
@@ -223,105 +178,8 @@ form textarea {
   margin-bottom: 15px;
 }
 
-textarea {
-  height: 120px;
-}
-
-form button {
-  background: #8dd9e4;
-  border: none;
-  padding: 15px;
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-form button:hover {
-  background: #5bbec4;
-}
-
-.info-section {
-  margin-top: 40px;
-  padding: 40px;
-  width: 40%;
-}
-
-.info-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #8dd9e4;
-}
-
-.info-section p {
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
 h1 {
   margin: 50px 0;
-}
-
-.job-section {
-  background: linear-gradient(135deg, #2a282f, #444);
-  color: white;
-  padding: 100px 10%;
-  text-align: center;
-}
-
-.job-content h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.job-content span {
-  color: #8dd9e4;
-}
-
-.job-content p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-.buttoncolour {
-  background: #8dd9e4;
-  color: black;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 18px;
-}
-
-.centering {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.centering2 {
-  background: #444;
-  padding: 20px;
-  text-align: left;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 30%;
-}
-
-.centering2 h3 {
-  color: #8dd9e4;
-  margin-bottom: 10px;
-}
-
-.buttoncolour2 {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #8dd9e4;
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
 }
 
 /* Footer */
@@ -341,4 +199,11 @@ footer {
 
 .footer-links a:hover {
   color: white;
+}
+
+/* Button styling */
+button {
+  height: 40px;
+  width: 70px;
+  background: #8dd9e4;
 }

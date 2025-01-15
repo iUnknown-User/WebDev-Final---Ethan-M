@@ -3,16 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>Katalyst</title>
+    <!-- Link to the external CSS file for styling the page -->
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
+  <style>
+    /* Styling for the contact image: makes it responsive with rounded corners and shadow */
+    #contact-image {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Styling for the information section (company details) */
+    #info-section {
+      margin-top: 40px;
+      padding: 40px;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Styling for the heading inside the info section */
+    #info-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #8dd9e4;
+    }
+
+    /* Styling for paragraphs in the info section */
+    #info-section p {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    /* Styling for the form button */
+    form button {
+      background: #8dd9e4;
+      border: none;
+      padding: 15px;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Styling for the textarea element in the form */
+    textarea {
+      height: 120px;
+    }
+
+    /* Styling for the contact form container */
+    #form-section {
+      background: #2a282f;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 50%;
+    }
+
+    /* Styling for the heading inside the form section */
+    #form-section h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #8dd9e4;
+    }
+
+    /* Styling for the form itself inside the form section */
+    #form-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    /* Styling for the overall contact page background */
+    #contact-page {
+      background: linear-gradient(135deg, #242227, #1b1a1f);
+      color: white;
+      padding: 100px 10%;
+      min-height: 100vh;
+    }
+
+    /* Styling for the container that holds the form and info section */
+    #contact-thing {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  </style>
   <body>
-    <!-- Navbar -->
+    <!-- Navbar Section -->
     <nav>
       <img src="img/logo.png" alt="Logo" />
+      <!-- Navigation links -->
       <a href="index.html">Home</a>
       <div class="dropdown">
         <a href="#">Careers</a>
+        <!-- Dropdown menu for Careers -->
         <div class="dropdown-menu">
           <a href="contract-jobs.html">Contract Jobs</a>
           <a href="permanent-jobs.html">Permanent Jobs</a>
@@ -20,11 +111,14 @@
       </div>
       <a href="about.html">Contact Us</a>
     </nav>
-    <!-- Main content -->
-    <main class="contact-page">
-      <div class="contact-container">
-        <div class="form-section">
+
+    <!-- Main Content Section -->
+    <main id="contact-page">
+      <div id="contact-thing">
+        <!-- Contact Form Section -->
+        <div id="form-section">
           <h1>Contact Us</h1>
+          <!-- Form to collect user data -->
           <form>
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Email" required />
@@ -38,10 +132,13 @@
               placeholder="Message"
               rows="5"
               required></textarea>
+            <!-- Submit button for the form -->
             <button type="submit">Submit</button>
           </form>
         </div>
-        <div class="info-section">
+
+        <!-- Information Section with company contact details -->
+        <div id="info-section">
           <h2>For questions, technical assistance, or collaboration:</h2>
           <p><strong>Phone:</strong> +1 (908) 967-5588</p>
           <p><strong>Email:</strong> info@katalysthls.com</p>
@@ -49,16 +146,22 @@
             <strong>Address:</strong> 285 Durham Ave, Suite 12, South
             Plainfield, NJ 07080
           </p>
+          <!-- Image of the company headquarters -->
+          <img
+            id="contact-image"
+            src="img/cat.png"
+            alt="Katalyst Headquarters" />
         </div>
       </div>
     </main>
 
-    <!--footer-->
+    <!-- Footer Section -->
     <footer>
-      <p style="text-align: center">
+      <p>
         &#169; 2025 Katalyst HealthCares & Life Sciences. All Rights Reserved.
         Muffin Group
       </p>
+      <!-- Footer Links -->
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
       <a href="#">Contact</a>
