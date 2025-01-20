@@ -107,38 +107,52 @@ fades in and slides the dropdown menu */
   display: block; /* Makes the dropdown visible */
 }
 
-/* Footer Section:
-footer styling across the site */
+/* Footer Section */
 footer {
   position: relative;
   width: 100%;
   background-color: #2a282f; /* Matches navbar background */
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Spacing between footer links */
+  height: auto; /* Adjust height to fit content */
   color: silver; /* Footer text color */
-  margin-top: 50px;
+  padding: 20px 20px; /* Padding for footer content */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Spacing between sections */
 }
 
+/* Copyright text above the links */
 footer p {
-  position: absolute;
-  top: 10px;
-  left: 50%; /* Centers the text horizontally */
-  transform: translateX(-50%);
   margin: 0;
 }
 
-footer a {
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: center; /* Centers the links */
+  gap: 20px; /* Adds space between footer links */
+}
+
+.footer-links a {
   color: silver;
   text-decoration: none;
   font-size: 16px;
-  transition: color 0.3s ease; /* Smooth hover effect */
+  transition: color 0.3s ease;
 }
 
-footer a:hover {
-  color: white; /* Highlighted color on hover */
+.footer-links a:hover {
+  color: white; /* Highlight on hover */
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px; /* Spacing between icons */
+  justify-content: center; /* Centers the icons */
+}
+
+.footer-icons img {
+  width: 30px; /* Set the size of the icons */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Box Styling:
@@ -179,18 +193,6 @@ form textarea {
 
 h1 {
   margin: 50px 0; /* Adds vertical spacing around headings */
-}
-
-/* Footer Styling */
-.footer-links a {
-  color: silver;
-  margin: 0 10px;
-  text-decoration: none; /* Removes underline */
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: white; /* Highlight on hover */
 }
 
 /* Button Styling:
