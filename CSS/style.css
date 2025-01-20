@@ -68,6 +68,9 @@ makes the dropdown under the 'Careers' link */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   padding: 10px 0;
   min-width: 200px;
+  opacity: 0;
+  transform: translateY(-10px); /* Dropdown starts slightly above */
+  animation: dropdownAnimation 0.3s ease-out forwards; /* Smooth entry */
 }
 
 /* Dropdown Animation:
@@ -81,12 +84,6 @@ fades in and slides the dropdown menu */
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.dropdown-menu {
-  opacity: 0;
-  transform: translateY(-10px); /* Dropdown starts slightly above */
-  animation: dropdownAnimation 0.3s ease-out forwards; /* Smooth entry */
 }
 
 .dropdown-menu a {
