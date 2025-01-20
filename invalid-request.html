@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalyst</title>
+    <!-- Link to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <style>
+    /* Make sure the body and html take full height to center the content properly */
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+    }
+
+    /* Main content container */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      margin-top: 70px;
+    }
+
+    /* Styling for the return page section */
+    #return-page {
+      font-size: 50px;
+      color: silver; /* Text color */
+      text-decoration: none; /* Removes underline for <a> */
+      padding: 50px 20px; /* Adds padding for spacing */
+      background-color: #2a282f; /* Dark background for contrast */
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      width: 100%; /* Full width */
+      max-width: 800px; /* Limit width */
+      margin-bottom: 40px; /* Space below */
+    }
+
+    /* Adjust the heading size */
+    #return-page h1 {
+      margin: 0;
+      padding-bottom: 20px; /* Adds space below the heading */
+      line-height: 1.3; /* Ensures the heading text doesn’t get too tight */
+    }
+
+    /* Optional return link styling */
+    #return-page a {
+      font-size: 30px;
+      color: #8dd9e4; /* Light blue color for the link */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    #return-page a:hover {
+      color: white; /* Highlight color on hover */
+    }
+  </style>
+  <body>
+    <main>
+      <!-- Navbar -->
+      <nav>
+        <img src="img/logo.png" alt="Katalyst Logo" />
+        <a href="index.html">Home</a>
+        <!-- Dropdown menu for Careers -->
+        <div class="dropdown">
+          <a href="#">Careers</a>
+          <div class="dropdown-menu">
+            <a href="contract-jobs.html">Contract Jobs</a>
+            <a href="permanent-jobs.html">Permanent Jobs</a>
+          </div>
+        </div>
+        <a href="about.html">Contact Us</a>
+      </nav>
+      <div id="return-page">
+        <h1>Oops! Looks like this page is still under construction.</h1>
+        <img src="img/sad.PNG" alt="Sad Face picture" />
+        <br />
+        <!-- Optional link to return to homepage or another page -->
+        <a href="index.html">Return to Home</a>
+      </div>
+    </main>
+    <footer>
+      <!-- Footer Section -->
+      <p>&#169; 2025 Job Board. All Rights Reserved.</p>
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <a href="invalid-request.html">Privacy Policy</a>
+        <a href="invalid-request.html">Terms of Service</a>
+        <a href="invalid-request.html">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>

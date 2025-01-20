@@ -4,75 +4,146 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Katalyst</title>
+    <!-- Link to External Stylesheet -->
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <style>
+    /* Styling for the job categories text */
     #jobtext {
-      color: silver;
-      text-align: center;
+      color: silver; /* Set text color to silver */
+      text-align: center; /* Center align text */
     }
+
+    /* Styling for buttons */
     .buttoncolour2 {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: #8dd9e4;
-      color: black;
-      text-decoration: none;
-      border-radius: 5px;
+      margin-top: 10px; /* Add spacing above the button */
+      padding: 10px 20px; /* Padding for button size */
+      background: #8dd9e4; /* Light blue background color */
+      color: black; /* Button text color */
+      text-decoration: none; /* Remove underline */
+      border-radius: 5px; /* Rounded corners */
     }
+
+    /*job categories section */
     #centering {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
+      display: flex; /* Align items in a row */
+      gap: 20px; /* Spacing between items */
+      justify-content: center; /* Center align items */
     }
 
+    /* Styling for each job category box */
     .centering2 {
-      background: #444;
-      padding: 20px;
-      text-align: left;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      width: 30%;
+      background: #444; /* Dark gray background color */
+      padding: 20px; /* padding inside the box */
+      text-align: left; /* Align text to the left */
+      border-radius: 5px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+      width: 30%; /* Set width to 30% */
     }
 
+    /* Styling for job category headings */
     .centering2 h3 {
-      color: #8dd9e4;
-      margin-bottom: 10px;
+      color: #8dd9e4; /* Light blue text color */
+      margin-bottom: 10px; /* Add spacing below the heading */
     }
+
+    /* Styling for button */
     #buttoncolour {
-      background: #8dd9e4;
-      color: black;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 18px;
+      background: #8dd9e4; /* Light blue background */
+      color: black; /* Button text color */
+      padding: 15px 30px; /* Button size */
+      text-decoration: none; /* Remove underline */
+      border-radius: 5px; /* Rounded corners */
+      font-size: 18px; /* Font size for text */
     }
+
+    /* Styling for the job-section */
     .job-section {
       background: linear-gradient(135deg, #2a282f, #444);
-      color: white;
-      padding: 100px 10%;
-      text-align: center;
+      color: white; /* Text color */
+      padding: 100px 10%; /* Add padding*/
+      text-align: center; /* Center align text */
     }
 
+    /* Styling for job-section content */
     .job-content h1 {
-      font-size: 48px;
+      font-size: 48px; /* Font size for main heading */
+      margin-bottom: 20px; /* Add spacing below the heading */
+    }
+
+    /* Highlight styling for span text */
+    .job-content span {
+      color: #8dd9e4; /* Light blue text color */
+    }
+
+    /* Styling for job-section */
+    .job-content p {
+      font-size: 20px; /* Font size for paragraph */
+      margin-bottom: 30px; /* Add spacing below paragraph */
+    }
+    /* Styling for the banner container */
+    #banner {
+      position: relative; /* positioning of content */
+      height: 600px; /* Set the height of the banner */
+      overflow: hidden; /* make stuff stays within bounds */
+    }
+
+    /* Styling for the banner image */
+    #banner img {
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      object-fit: cover; /* Maintain aspect ratio and cover the area */
+    }
+
+    /* Styling for the banner content */
+    .banner-content {
+      position: absolute; /* Position over the image */
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Adjust for true center alignment */
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px; /* Rounded corners */
+      color: white; /* White text color for contrast */
+    }
+
+    /* Styling for the banner heading */
+    .banner-content h1 {
+      font-size: 48px; /* Large font size for the heading */
+      margin-bottom: 10px;
+    }
+
+    /* Styling for the banner paragraph */
+    .banner-content p {
+      font-size: 20px; /* Font size for the subheading */
       margin-bottom: 20px;
     }
 
-    .job-content span {
-      color: #8dd9e4;
+    /* Styling for the button in the banner */
+    .banner-content a {
+      color: black; /* Text color for button */
+      background: #8dd9e4; /* Button background color */
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px; /* Rounded corners for the button */
+      font-size: 18px;
     }
 
-    .job-content p {
-      font-size: 20px;
-      margin-bottom: 30px;
+    .banner-content a:hover {
+      background: #6cb2d8; /* Slightly darker button color on hover */
+    }
+    #job-text {
+      font-size: 40px;
     }
   </style>
   <body>
     <!-- Navbar -->
     <nav>
-      <img src="img/logo.png" alt="Company Logo" />
+      <img src="img/logo.png" alt="Katalyst Logo" />
       <a href="index.html">Home</a>
+      <!-- Dropdown menu for Careers -->
       <div class="dropdown">
         <a href="#">Careers</a>
         <div class="dropdown-menu">
@@ -82,10 +153,10 @@
       </div>
       <a href="about.html">Contact Us</a>
     </nav>
-
-    <!-- Header Section  -->
-    <header class="job-section">
-      <div class="job-content">
+    <!-- Banner Section -->
+    <header id="banner">
+      <img src="img/banner.jpg" alt="Banner Image From Katalyst" />
+      <div class="banner-content">
         <h1>Welcome to <span>Katalyst</span></h1>
         <p>Find a job here.</p>
         <a href="contract-jobs.html" id="buttoncolour">Explore Jobs</a>
@@ -94,43 +165,33 @@
 
     <!-- Job Categories Section -->
     <section id="jobtext">
-      <h2>Job Categories</h2>
+      <div id="job-text">
+        <h1>Job Categories</h1>
+      </div>
       <div id="centering">
+        <!-- Contract Jobs -->
         <article class="centering2">
           <h3>Contract Jobs</h3>
+          <p>Contract positions</p>
           <a href="contract-jobs.html" class="buttoncolour2">View Listings</a>
         </article>
+        <!-- Permanent Jobs -->
         <article class="centering2">
           <h3>Permanent Jobs</h3>
-          <p>Long-term positions to achieve stability and growth.</p>
+          <p>Long-term positions.</p>
           <a href="permanent-jobs.html" class="buttoncolour2">View Listings</a>
         </article>
-      </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="map-section">
-      <div class="map-container">
-        <!-- This iframe makes the map of katalyst headcorters-->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6062.654591973135!2d-74.414592!3d40.556449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b8185896ac5d%3A0x65b7da2173ffc55d!2sKatalyst%20HealthCares%20%26%20Life%20Sciences!5e0!3m2!1sen!2sus!4v1736357331264!5m2!1sen!2sus"
-          width="100%"
-          height="400"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
       </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
       <p>&#169; 2025 Job Board. All Rights Reserved.</p>
+      <!-- Footer Links -->
       <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="tos.html">Terms of Service</a>
-        <a href="#">Contact</a>
+        <a href="invalid-request.html">Privacy Policy</a>
+        <a href="invalid-request.html">Terms of Service</a>
+        <a href="invalid-request.html">Contact</a>
       </div>
     </footer>
   </body>
