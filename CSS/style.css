@@ -9,29 +9,27 @@ This part of the CSS resets all values and sets the default font and line height
   line-height: 25px;
 }
 
-/* Body Styling:
-Controls the background and layout for the entire page */
+/* Background for the entire webpage */
 body {
   background: #242227;
-  min-height: 100vh; /* Ensures the body covers the full viewport height */
+  min-height: 100vh;
   display: flex;
-  flex-direction: column; /* Allows stacking of child elements */
+  flex-direction: column;
 }
 
-/* Navbar Section:
-Provides a navigation bar for navigation across web pages */
+/* Navbar Section*/
 nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Navbar spans the full width of the webpage */
+  width: 100%;
   background-color: #2a282f; /* Dark background */
   padding: 30px 0;
-  z-index: 1000; /* Ensures the navbar stays on top of other elements */
+  z-index: 1000; /* Makes sure the navbar stays on top of other elements */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px; /* Adds spacing between navbar items */
+  gap: 40px; /* Adds spacing between items */
 }
 
 nav img {
@@ -41,7 +39,7 @@ nav img {
 
 nav a {
   font-size: 40px;
-  color: silver; /* Text color */
+  color: #ffffff; /* Text color */
   text-decoration: none; /* Removes underline for <a>*/
   padding: 5px 10px;
   transition: color 0.3s ease; /* hover effect */
@@ -50,7 +48,7 @@ nav a {
 /* Navbar Hover Effect:
 Changes link color on hover */
 nav a:hover {
-  color: white; /* Highlighted text color */
+  color: silver; /* Highlighted text color */
 }
 
 /* Dropdown Menu Styling:
@@ -64,7 +62,7 @@ makes the dropdown under the 'Careers' link */
   position: absolute; /* Positions dropdown under carrers */
   top: 100%; /* Places menu below the dropdown */
   left: 0;
-  background-color: #2a282f; /* Same background as the navbar */
+  background-color: #242227; /* Same background as the navbar */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   padding: 10px 0;
   min-width: 200px;
@@ -108,9 +106,9 @@ fades in and slides the dropdown menu */
 footer {
   position: relative;
   width: 100%;
-  background-color: #2a282f; /* Matches navbar background */
+  background-color: #2a282f;
   height: auto; /* Adjust height to fit content */
-  color: silver; /* Footer text color */
+  color: #ffffff; /* Footer text color */
   padding: 20px 20px; /* Padding for footer content */
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -118,7 +116,7 @@ footer {
   gap: 20px; /* Spacing between sections */
 }
 
-/* Copyright text above the links */
+/* Copyright text */
 footer p {
   margin: 0;
 }
@@ -131,7 +129,7 @@ footer p {
 }
 
 .footer-links a {
-  color: silver;
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
@@ -153,13 +151,13 @@ footer p {
 }
 
 /* Box Styling:
-Styles individual boxes used for job listings */
+adds boxes used for job listings */
 #box,
 .job-box,
 .job-box2 {
   background-color: #444; /* Dark gray background for boxes */
   padding: 30px; /* Adds inner spacing */
-  color: silver;
+  color: #ffffff;
   font-size: 18px;
   text-align: left;
   margin: 20px auto; /* Centers the box and adds spacing */
@@ -172,7 +170,7 @@ strong {
 }
 
 /* Form Styling:
-Provides styling for form elements */
+styling for form elements */
 form {
   padding: 20px;
 }
@@ -189,25 +187,18 @@ form textarea {
 }
 
 h1 {
-  margin: 50px 0; /* Adds vertical spacing around headings */
+  margin: 50px 0; /*spacing around headings */
 }
 
 /* Button Styling:
-Consistent design for buttons throughout the site */
+Consistent design for buttons */
 button {
   height: 40px;
   width: 70px;
   background: #8dd9e4; /* Light blue background */
 }
 
-a {
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #8dd9e4;
-}
-
+/* makes it so that its accessable from any device */
 @media (max-width: 768px) {
   #contact-thing {
     flex-direction: column;
